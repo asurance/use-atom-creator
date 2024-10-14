@@ -15,8 +15,8 @@
   "types": "./dist/types/index.d.ts",
   "scripts": {
     "build": "modern build",
-    "build:watch": "modern build -w",
     "build:doc": "modern build --platform",
+    "build:watch": "modern build -w",
     "bump": "modern bump",
     "change": "modern change",
     "change-status": "modern change-status",
@@ -57,6 +57,7 @@
     "jotai": "*",
     "react": "*"
   },
+  "packageManager": "pnpm@9.1.2",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
