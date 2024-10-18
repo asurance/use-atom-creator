@@ -1,0 +1,40 @@
+## 基本使用
+
+```tsx
+import { useAtom } from 'jotai';
+import React from 'react';
+import { useAtomCreator } from 'use-atom-creator';
+
+const Count = () => {
+  const countAtom = useAtomCreator(0);
+  const [count, setCount] = useAtom(countAtom);
+  return (
+    <div className="flex gap-[8px] items-center">
+      {count}
+      <button
+        className="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10"
+        onClick={() => setCount(count + 1)}
+      >
+        +
+      </button>
+      <button
+        className="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10"
+        onClick={() => setCount(count - 1)}
+      >
+        -
+      </button>
+    </div>
+  );
+};
+
+const Demo = () => {
+  return (
+    <div className="flex flex-col gap-[8px]">
+      <Count />
+      <Count />
+    </div>
+  );
+};
+
+export default Demo;
+```

@@ -11,7 +11,7 @@
     "lib": ["DOM", "ESNext"],
     "moduleResolution": "node",
     "paths": {
-      "@/*": ["./src/*"]
+      "use-atom-creator": ["."]
     },
     "resolveJsonModule": true,
     "rootDir": "src",

@@ -3,5 +3,10 @@
     "type": "file",
     "name": "welcome",
     "label": "欢迎使用"
+  },
+  {
+    "type": "dir",
+    "name": "demos",
+    "label": "示例"
   }
 ]
